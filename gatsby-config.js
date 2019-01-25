@@ -21,7 +21,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-material-design-for-bootstrap`,
-        short_name: `MDB React starter`,
+        short_name: `MDB starter`,
         start_url: `/`,
         background_color: `#4B5EB8`,
         theme_color: `#68008C`,

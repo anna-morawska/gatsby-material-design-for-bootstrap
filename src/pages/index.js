@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import Navbar from '../components/navbar';
+import Layout from '../components/layout';
 import Intro from '../components/mask';
+import SEO from '../components/seo';
 import Carousel from '../components/carousel';
-import Footer from '../components/footer';
 import AboutSection from '../components/aboutSection'
 import Card from '../components/card'
 import { MDBRow } from 'mdbreact'
-import "./index.css";
 
 class App extends Component {
   render() {
     return (
       <>
-        <Navbar />
+        <Layout>
+          <SEO title="Home" keywords={[`gatsby`, `MDBReact`, `react`, `Material Design For Bootstrap`]} />
         <Carousel />
         <Intro />
         <main>
@@ -28,7 +28,7 @@ class App extends Component {
             </MDBRow>
           </section>
         </main>
-        <Footer />
+        </Layout>
       </>
     );
   }
